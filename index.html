@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Music Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    The main navigation appears at the top of every page. It uses a semantic
+    <nav> element and provides three links: Home, About and Contact.  A
+    button with an aria‑label toggles the visibility of the navigation menu on
+    smaller screens.  Each anchor uses clear, descriptive text rather than
+    icons so that screen readers can identify their purpose.  See the
+    accompanying script in script.js for the responsive behaviour.  
+  -->
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo">Music</a>
+      <button class="nav-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul id="navigation" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="vocalsphere.html">VocalSphere</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section with background image and call to action.  The
+         background image is purely decorative so its alt text is empty.
+    -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="assets/images/hero-bg.png" alt="" class="hero-bg" />
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-title">Discover royalty‑free music</h1>
+          <p>Find the perfect soundtrack for your next project.</p>
+          <a href="#tracks" class="btn">Explore tracks</a>
+        </div>
+        <div class="hero-highlight" aria-label="Featured release">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" />
+          <h3>Juicy</h3>
+          <audio controls preload="none">
+            <source src="assets/audio/Juicy.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <a href="#tracks" class="btn">Listen now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured tracks.  Each track card contains cover art, metadata,
+         an HTML5 audio element with controls and a collapsible transcript.  The
+         audio element uses the built‑in browser controls which support
+         keyboard navigation and are compatible with assistive technology.
+    -->
+    <section id="tracks" class="tracks" aria-labelledby="tracks-title">
+      <h2 id="tracks-title">Featured tracks</h2>
+      <div class="track-grid">
+        <!-- Track 1 -->
+        <article class="track-card">
+          <img src="assets/images/cover1.png" alt="Swirling neon rings in red and blue on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>Ethereal Waves</h3>
+            <p class="artist">By AI Composer</p>
+            <audio controls preload="none">
+              <source src="assets/audio/track1.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                This instrumental track opens with a mellow electronic pad and a steady beat.  
+                A gentle synthesizer plays a repeating melody while subtle percussive elements add
+                texture.  The mood is calm and atmospheric, making it suitable for backgrounds or
+                intros.  There are no vocals.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Track 2 -->
+        <article class="track-card">
+          <img src="assets/images/cover2.png" alt="Blue and purple spiral swirl on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>Neon Spiral</h3>
+            <p class="artist">By AI Composer</p>
+            <audio controls preload="none">
+              <source src="assets/audio/track2.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                The track begins with a slowly rising synth that quickly evolves into a vibrant
+                oscillating tone.  Rhythmic pulses create a sense of forward motion while layered
+                harmonies sweep through the stereo field.  The piece is entirely instrumental and
+                builds energy over time.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- New track: Juicy -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>Juicy</h3>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="none">
+              <source src="assets/audio/Juicy.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                This track kicks off with an energetic beat and layers of synths reminiscent of juicy, fruity
+                flavours.  Crisp percussion and punchy bass lines drive the rhythm while bright melodies dance on
+                top.  The mood is upbeat and uplifting, making it suitable for intros, vlogs or dance scenes.  There
+                are no vocals.  This track appears on the <em>VS NCM: Rap Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- New track: hotmess.exe -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>hotmess.exe</h3>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="none">
+              <source src="assets/audio/hotmess.exe.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                This experimental track features glitchy, computer‑like sound effects and distorted chords.  It
+                opens with erratic digital blips before settling into a steady beat.  The mood is edgy and
+                futuristic, with occasional static and stutter effects.  There are no vocals.  This track appears on the <em>VS NCM: Rap Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- New track: Battery Low -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>Battery Low</h3>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="none">
+              <source src="assets/audio/batterylow.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                A mellow, downtempo beat starts this song, accompanied by warm pads and subtle piano chords.  The
+                arrangement is minimalistic and conveys a sense of winding down or low energy.  It is ideal for
+                quiet scenes, reflections or background ambience.  There are no vocals.  This track appears on the <em>VS NCM: Rap Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- New track: Party On -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>Party On</h3>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="none">
+              <source src="assets/audio/partyon.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                This upbeat track starts with lively synth stabs and a driving bass drum.  Claps and hi‑hats join in
+                to create a festive, danceable groove.  The melodies are catchy and the energy stays high throughout,
+                perfect for party montages or celebratory videos.  There are no vocals.  This track appears on the <em>VS NCM: Rap Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- New track: VIP (No Invite) -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>VIP (No Invite)</h3>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="none">
+              <source src="assets/audio/vipnoinvite.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                A dark, moody trap beat opens this song with deep bass and sparse percussion.  Ethereal pads and
+                subtle bell‑like motifs add a sense of exclusivity and intrigue.  The overall tone is mysterious yet
+                confident.  There are no vocals.  This track appears on the <em>VS NCM: Rap Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About preview section encouraging users to learn more about the
+         mission.  A link leads to the full About page. -->
+    <section class="about-preview" aria-labelledby="about-preview-title">
+      <h2 id="about-preview-title">About</h2>
+      <p>
+        Our library provides high‑quality, royalty‑free music for your creative projects. We
+        believe in making music accessible to everyone by following web accessibility
+        guidelines and ensuring that our site is easy to use for all visitors.
+      </p>
+      <a href="about.html" class="btn secondary">Learn more</a>
+    </section>
+  </main>
+
+  <!-- Footer with navigation and social links.  The social links are
+       represented by simple inline SVG icons which convey meaning even
+       without colour. -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Free Music Library</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <!-- Social media icons as inline SVG for better contrast control -->
+        <a href="#" aria-label="Follow us on Twitter">
+          <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.59-2.46.7a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04A4.28 4.28 0 0 0 16.2 4c-2.37 0-4.29 1.9-4.29 4.25 0 .33.04.66.1.97a12.15 12.15 0 0 1-8.82-4.45 4.18 4.18 0 0 0-.58 2.14 4.25 4.25 0 0 0 1.9 3.55 4.3 4.3 0 0 1-1.94-.53v.06c0 2.06 1.48 3.78 3.44 4.18a4.4 4.4 0 0 1-1.93.07 4.26 4.26 0 0 0 3.99 2.94A8.58 8.58 0 0 1 2 19.54a12.07 12.07 0 0 0 6.56 1.91c7.88 0 12.2-6.47 12.2-12.07 0-.18 0-.35-.01-.53A8.51 8.51 0 0 0 22.46 6z"></path></svg>
+        </a>
+        <a href="#" aria-label="Follow us on Facebook">
+          <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22.67 0H1.33C.6 0 0 .6 0 1.33v21.34C0 23.4.6 24 1.33 24h11.5V14.7h-3.1v-3.6h3.1V8.8c0-3.1 1.9-4.8 4.7-4.8 1.3 0 2.5.1 2.8.2v3.2h-1.9c-1.5 0-1.8.7-1.8 1.8v2.3h3.6l-.5 3.6h-3.1V24h6.1c.7 0 1.3-.6 1.3-1.33V1.33C24 .6 23.4 0 22.67 0z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VocalSphere – Music Label</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo">Music</a>
+      <button class="nav-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul id="navigation" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="vocalsphere.html" aria-current="page">VocalSphere</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section introducing the label -->
+    <section class="hero" aria-labelledby="vs-hero-title">
+      <img src="assets/images/vs-hero.png" alt="Colourful music notes and equaliser bars on a dark background" class="hero-bg" />
+      <div class="hero-content">
+        <h1 id="vs-hero-title">VocalSphere</h1>
+        <p>Uplifting & empowering copyright‑free music</p>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="content" aria-labelledby="vs-about-title">
+      <h2 id="vs-about-title">About</h2>
+      <p>
+        VocalSphere (VS) is an independent music label producing both instrumental and vocal tracks.  Our mission is
+        to create uplifting, empowering and copyright‑free music for creators, businesses and fans worldwide.
+      </p>
+    </section>
+
+    <!-- Music catalog -->
+    <section class="content" aria-labelledby="vs-catalog-title">
+      <h2 id="vs-catalog-title">Music catalog</h2>
+      <h3>Instrumental tracks</h3>
+      <ul>
+        <li><strong>Metadata:</strong> Title, Genre, Mood, BPM</li>
+        <li><strong>Usage:</strong> Perfect for YouTube videos, podcasts, films, games and background music</li>
+        <li><strong>Description template:</strong> 🎶 <em>Title</em> | [Genre &amp; Mood] – No copyright music</li>
+        <li><strong>Information provided:</strong> Download/stream links, BPM and intended uses</li>
+      </ul>
+      <h3>Vocal tracks (songs with lyrics)</h3>
+      <ul>
+        <li><strong>Metadata:</strong> Title, Genre, Mood, BPM</li>
+        <li><strong>Credits:</strong> Artist (VocalSphere), Songwriter and Producer</li>
+        <li><strong>Usage rights:</strong> Free for personal and commercial use (with attribution)</li>
+        <li><strong>Lyric video:</strong> Every song has an official lyric video released on Vevo</li>
+        <li><strong>Title style example:</strong> “Fly High | Uplifting &amp; Empowering – No Copyright Music”</li>
+      </ul>
+    <!-- Latest releases section for streaming our newest tracks -->
+    <section id="vs-tracks" class="tracks" aria-labelledby="vs-tracks-title">
+      <h3 id="vs-tracks-title">Latest releases</h3>
+      <div class="track-grid">
+        <!-- Juicy -->
+        <article class="track-card">
+          <!-- Use the Rap Mon album art for all Rapmon tracks -->
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h4>Juicy</h4>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="none">
+              <source src="assets/audio/Juicy.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                This track kicks off with an energetic beat and layers of synths reminiscent of juicy, fruity
+                flavours.  Crisp percussion and punchy bass lines drive the rhythm while bright melodies dance
+                on top.  The mood is upbeat and uplifting, making it suitable for intros, vlogs or dance scenes.
+                There are no vocals.  This track appears on the <em>VS&nbsp;NCM:&nbsp;Rap&nbsp;Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- hotmess.exe -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h4>hotmess.exe</h4>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="none">
+              <source src="assets/audio/hotmess.exe.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                This experimental track features glitchy, computer‑like sound effects and distorted chords.  It
+                opens with erratic digital blips before settling into a steady beat.  The mood is edgy and
+                futuristic, with occasional static and stutter effects.  There are no vocals.  This track appears on the <em>VS&nbsp;NCM:&nbsp;Rap&nbsp;Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Battery Low -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h4>Battery Low</h4>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="none">
+              <source src="assets/audio/batterylow.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                A mellow, downtempo beat starts this song, accompanied by warm pads and subtle piano chords.  The
+                arrangement is minimalistic and conveys a sense of winding down or low energy.  It is ideal for
+                quiet scenes, reflections or background ambience.  There are no vocals.  This track appears on the <em>VS&nbsp;NCM:&nbsp;Rap&nbsp;Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Party On -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h4>Party On</h4>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="none">
+              <source src="assets/audio/partyon.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                This upbeat track starts with lively synth stabs and a driving bass drum.  Claps and hi‑hats
+                join in to create a festive, danceable groove.  The melodies are catchy and the energy stays
+                high throughout, perfect for party montages or celebratory videos.  There are no vocals.  This track appears on the <em>VS&nbsp;NCM:&nbsp;Rap&nbsp;Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- VIP (No Invite) -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h4>VIP (No Invite)</h4>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="none">
+              <source src="assets/audio/vipnoinvite.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                A dark, moody trap beat opens this song with deep bass and sparse percussion.  Ethereal pads
+                and subtle bell‑like motifs add a sense of exclusivity and intrigue.  The overall tone is
+                mysterious yet confident.  There are no vocals.  This track appears on the <em>VS&nbsp;NCM:&nbsp;Rap&nbsp;Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+    </section>
+
+    <!-- Lyric video format -->
+    <section class="content" aria-labelledby="vs-lyric-title">
+      <h2 id="vs-lyric-title">Lyric video format – Vevo</h2>
+      <p>The lyric videos for our songs follow a consistent format on Vevo:</p>
+      <ul>
+        <li><strong>Title:</strong> [Song Title] – Official Lyric Video | VEVO Premiere 🎶</li>
+        <li><strong>Description template:</strong>
+          <ul>
+            <li>🎵 Official lyric video for <em>[Song Title]</em> by VocalSphere (VS)</li>
+            <li>Genre, mood and BPM information</li>
+            <li>Stream/download links</li>
+            <li>Full lyrics</li>
+            <li>Credits: writer / producer / vocals</li>
+            <li>Links to follow VocalSphere on social media</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Distribution & streaming -->
+    <section class="content" aria-labelledby="vs-distribution-title">
+      <h2 id="vs-distribution-title">Distribution &amp; streaming</h2>
+      <p>
+        You can find VocalSphere’s releases on Jamendo, YouTube, Vevo, Facebook, Instagram and TikTok.  We also
+        plan to launch on Spotify soon.  Explore our Jamendo artist profile for the full catalogue:
+        <a href="https://www.jamendo.com/artist/599298/vocalsphere" target="_blank" rel="noopener">VocalSphere on Jamendo</a>.
+      </p>
+    </section>
+
+    <!-- Usage rights & licensing -->
+    <section class="content" aria-labelledby="vs-usage-title">
+      <h2 id="vs-usage-title">Usage rights &amp; licensing</h2>
+      <p>
+        Our music is free for personal, educational and commercial use with proper credit to VocalSphere.  Content
+        creators are encouraged to use our tracks in:
+      </p>
+      <ul>
+        <li>🎬 YouTube, TikTok and Instagram videos</li>
+        <li>🎧 Podcasts and audiobooks</li>
+        <li>🎮 Games and apps</li>
+        <li>🏢 Business presentations</li>
+      </ul>
+      <p>
+        For exclusive licensing or custom compositions, please <a href="#contact">contact us</a>.
+      </p>
+    </section>
+
+    <!-- Contact information specific to VocalSphere -->
+    <section id="contact" class="content" aria-labelledby="vs-contact-title">
+      <h2 id="vs-contact-title">Contact</h2>
+      <p>If you have questions about our label or are interested in collaborating, please reach out.</p>
+      <ul>
+        <li>📧 Email: <a href="mailto:music@vocalspheres.com">music@vocalspheres.com</a></li>
+        <li>🌐 Website: <a href="https://www.vocalspheres.com" target="_blank" rel="noopener">www.vocalspheres.com</a> (coming soon)</li>
+      </ul>
+    </section>
+
+    <!-- Social media links -->
+    <section class="content" aria-labelledby="vs-social-title">
+      <h2 id="vs-social-title">Social media</h2>
+      <p>Follow VocalSphere on your favourite platforms:</p>
+      <ul>
+        <li><a href="https://www.instagram.com/@officialevo_3/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/officialevo3" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.youtube.com/@OfficialEvo_3" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.tiktok.com/@officialevo_3?_t=ZS-8tgksezYQkx&_r=1" target="_blank" rel="noopener">TikTok</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Free Music Library</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vocalsphere.html" aria-current="page">VocalSphere</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
