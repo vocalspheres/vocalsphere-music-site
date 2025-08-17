@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VocalSphere – Music Label</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome used for icons and search bar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-5wVn8Y09h1K4/UXUUSqs9q43Zk64YuMvd0kM6GCBkNvztNFV3mMnYJwcyJhmOkdTVMuE8RchwroRu6Nt3R1WzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -20,6 +22,12 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <!-- Consistent search bar across pages -->
+    <form class="search-container" role="search">
+      <label for="vs-search-input" class="visually-hidden">Search</label>
+      <input type="search" id="vs-search-input" placeholder="Search VocalSphere music…" />
+      <button type="submit" aria-label="Submit search" class="search-button"><i class="fas fa-search"></i></button>
+    </form>
   </header>
 
   <main>
@@ -29,6 +37,16 @@
       <div class="hero-content">
         <h1 id="vs-hero-title">VocalSphere</h1>
         <p>Uplifting & empowering copyright‑free music</p>
+      </div>
+    </section>
+
+    <!-- Category buttons for VocalSphere page -->
+    <section id="vs-categories" aria-label="Browse by category">
+      <h2 class="visually-hidden">Categories</h2>
+      <div class="category-grid">
+        <button class="category">Instrumental</button>
+        <button class="category">Vocal</button>
+        <button class="category">Rap Mon</button>
       </div>
     </section>
 
@@ -70,7 +88,7 @@
           <div class="track-info">
             <h4>Juicy</h4>
             <p class="artist">By VocalSphere</p>
-            <audio controls preload="none">
+            <audio controls preload="metadata">
               <source src="assets/audio/Juicy.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
@@ -92,7 +110,7 @@
           <div class="track-info">
             <h4>hotmess.exe</h4>
             <p class="artist">By VocalSphere</p>
-            <audio controls preload="none">
+            <audio controls preload="metadata">
               <source src="assets/audio/hotmess.exe.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
@@ -113,7 +131,7 @@
           <div class="track-info">
             <h4>Battery Low</h4>
             <p class="artist">By VocalSphere</p>
-            <audio controls preload="none">
+            <audio controls preload="metadata">
               <source src="assets/audio/batterylow.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
@@ -134,7 +152,7 @@
           <div class="track-info">
             <h4>Party On</h4>
             <p class="artist">By VocalSphere</p>
-            <audio controls preload="none">
+            <audio controls preload="metadata">
               <source src="assets/audio/partyon.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
@@ -155,7 +173,7 @@
           <div class="track-info">
             <h4>VIP (No Invite)</h4>
             <p class="artist">By VocalSphere</p>
-            <audio controls preload="none">
+            <audio controls preload="metadata">
               <source src="assets/audio/vipnoinvite.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
