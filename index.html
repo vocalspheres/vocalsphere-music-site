@@ -24,7 +24,7 @@
       <button id="menu-button" class="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="side-menu">
         <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
-      <a href="index.html" class="logo">Music</a>
+      <a href="index.html" class="logo">VOCALSPHERE</a>
       <button class="nav-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="hamburger"></span>
       </button>
@@ -49,7 +49,8 @@
          background image is purely decorative so its alt text is empty.
     -->
     <section class="hero" aria-labelledby="hero-title">
-      <img src="assets/images/hero-bg.png" alt="" class="hero-bg" />
+      <!-- Use a black‑and‑white version of the wavy background for better contrast -->
+      <img src="assets/images/hero-bg-bw.png" alt="Abstract black wave lines on a dark background" class="hero-bg" />
       <div class="hero-grid">
         <div class="hero-text">
           <h1 id="hero-title">Discover VS NCM: Rap Mon</h1>
@@ -195,6 +196,94 @@
             </details>
           </div>
         </article>
+
+        <!-- New track: Only Human -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>Only Human</h3>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="metadata">
+              <source src="assets/audio/onlyhuman.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                This atmospheric synth‑wave ballad blends warm pads, reverberant keys and a steady, pulsing beat.  It
+                slowly unfolds with shimmering arpeggios and gentle chords, creating a reflective and introspective
+                mood.  Soft vocal chops add a human touch without full lyrics.  This track appears on the
+                <em>VS NCM: Rap Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- New track: Pieces of Me -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>Pieces of Me</h3>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="metadata">
+              <source src="assets/audio/PiecesofMe.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                Built around a delicate piano melody, this piece is introspective and emotional.  Sparse strings and
+                ambient textures weave in and out, supporting the piano’s gentle phrases.  The tempo is slow and
+                measured, evoking contemplation and nostalgia.  There are no vocals.  This track appears on the
+                <em>VS NCM: Rap Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- New track: Still Got Me -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>Still Got Me</h3>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="metadata">
+              <source src="assets/audio/stillgotme.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                This tender acoustic track layers gentle guitar strums with soft piano chords and airy pads.
+                The arrangement is warm and comforting, evoking feelings of nostalgia and solace.  Subtle percussion
+                accents add movement without overpowering the mellow vibe.  There are no vocals.  This track
+                appears on the <em>VS NCM: Rap Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
+
+        <!-- New track: You Almost Loved Me -->
+        <article class="track-card">
+          <img src="assets/images/rapmon-cover.jpg" alt="Album cover for Rap Mon with large white text on a dark background" class="track-cover" />
+          <div class="track-info">
+            <h3>You Almost Loved Me</h3>
+            <p class="artist">By VocalSphere</p>
+            <audio controls preload="metadata">
+              <source src="assets/audio/youalmostlovedme.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <details>
+              <summary>Transcript</summary>
+              <p>
+                A downtempo beat underscores shimmering synths and delicate chords in this moody piece.  Soft
+                vocal phrases drift in and out, conveying a sense of longing and unresolved emotion.  Light
+                percussion and bass provide structure while the melodies weave a bittersweet narrative.  This
+                track appears on the <em>VS NCM: Rap Mon</em> album.
+              </p>
+            </details>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -213,8 +302,11 @@
     <!-- Video showcase section embedding our YouTube channel -->
     <section id="videos" aria-labelledby="videos-title">
       <h2 id="videos-title">Watch Our Latest Videos</h2>
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed?listType=user_uploads&list=ArtistsVocalSphere" title="VocalSphere YouTube channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- Display three channels: our main channel, VEVO lyric videos and the topic channel -->
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=ArtistsVocalSphere" title="Artists VocalSphere uploads" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=VocalSphereVEVO" title="VocalSphere VEVO lyric videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=UCI8JZSAMvHsdGr9xpHuPWtA" title="VocalSphere topic channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
   </main>
