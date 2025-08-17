@@ -566,3 +566,159 @@ footer {
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }
+
+/* -----------------------------------------------------------------
+   Side navigation and video section styles
+   These rules support the optional off‑canvas menu and embedded video
+   player inspired by the NCS.io design.  The menu slides in from the
+   left and overlays the page with a semi‑transparent backdrop.  The
+   video section maintains a 16:9 aspect ratio for responsive embeds.
+   ----------------------------------------------------------------- */
+
+/* Menu trigger button */
+.menu-button {
+  background: none;
+  border: none;
+  color: var(--color-heading);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Focus style for keyboard users */
+.menu-button:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Off‑canvas side menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: var(--color-heading);
+  padding: 1.5rem 1rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.side-menu.open {
+  transform: translateX(0);
+}
+
+/* Close button inside the side menu */
+.side-menu .close-button {
+  background: none;
+  border: none;
+  color: var(--color-heading);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+}
+
+/* Menu list styles */
+.side-menu .menu-list {
+  list-style: none;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+.side-menu .menu-list li {
+  margin-bottom: 1.5rem;
+}
+
+.side-menu .menu-list a {
+  color: var(--color-heading);
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.side-menu .menu-list a i {
+  margin-right: 0.75rem;
+}
+
+.side-menu .menu-list a:hover,
+.side-menu .menu-list a:focus {
+  color: var(--color-accent);
+}
+
+/* Social icons in side menu */
+.side-menu .social-links {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.side-menu .social-links a {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  color: var(--color-heading);
+  transition: color 0.2s ease;
+}
+
+.side-menu .social-links a:hover,
+.side-menu .social-links a:focus {
+  color: var(--color-accent);
+}
+
+/* Overlay behind the side menu */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 900;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Video section styles */
+#videos {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 0 1rem;
+  color: var(--color-heading);
+}
+
+#videos h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
