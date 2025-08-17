@@ -6,14 +6,18 @@
   fonts for performance and legibility.
 */
 
+/* Import Montserrat font for a modern look akin to NCS.io */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 :root {
-  --color-bg: #0c0e18;
-  --color-card: #141927;
-  --color-footer: #0c0e20;
-  --color-text: #e5e5e5;
-  --color-heading: #ffffff;
-  --color-accent: #0078d4;
-  --color-border: #2a3149;
+  /* Updated colour palette for a high‑contrast black and white theme */
+  --color-bg: #000000;       /* primary page background */
+  --color-card: #0f0f0f;     /* card and section backgrounds */
+  --color-footer: #0a0a0a;   /* footer background */
+  --color-text: #e0e0e0;     /* body text colour */
+  --color-heading: #ffffff;  /* headings and prominent text */
+  --color-accent: #00a8ff;   /* accent colour for buttons and links */
+  --color-border: #222222;   /* subtle borders and separators */
 }
 
 /* Visually hidden class for accessible labels */
@@ -114,7 +118,8 @@ html, body {
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Use Montserrat for a clean, modern appearance similar to NCS.io */
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
@@ -702,23 +707,30 @@ footer {
 
 #videos h2 {
   font-size: 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  max-width: 800px;
-  margin: 0 auto;
+/* Display multiple video playlists in a responsive grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0 auto 3rem;
+  max-width: 1200px;
 }
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+@media (min-width: 700px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.video-grid iframe {
   width: 100%;
-  height: 100%;
+  height: 315px;
   border: none;
+  border-radius: 0.5rem;
 }
