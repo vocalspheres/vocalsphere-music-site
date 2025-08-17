@@ -11,6 +11,9 @@
 <body>
   <header>
     <nav class="navbar" aria-label="Main navigation">
+      <button id="menu-button" class="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="side-menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
       <a href="index.html" class="logo">Music</a>
       <button class="nav-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="hamburger"></span>
@@ -26,7 +29,7 @@
     <form class="search-container" role="search">
       <label for="vs-search-input" class="visually-hidden">Search</label>
       <input type="search" id="vs-search-input" placeholder="Search VocalSphere music…" />
-      <button type="submit" aria-label="Submit search" class="search-button"><i class="fas fa-search"></i></button>
+      <button type="submit" aria-label="Submit search" class="search-button"><i class="fas fa-search" aria-hidden="true"></i></button>
     </form>
   </header>
 
@@ -274,6 +277,25 @@
       </nav>
     </div>
   </footer>
+
+  <!-- Side navigation markup inserted just before closing body -->
+  <aside id="side-menu" class="side-menu" aria-label="Site menu">
+    <button id="close-menu" class="close-button" aria-label="Close menu"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <ul class="menu-list">
+      <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+      <li><a href="#vs-tracks"><i class="fas fa-music"></i><span>Music Library</span></a></li>
+      <li><a href="vocalsphere.html" aria-current="page"><i class="fas fa-users"></i><span>Artists</span></a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i><span>About</span></a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+    </ul>
+    <div class="social-links">
+      <a href="https://open.spotify.com" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+      <a href="https://www.instagram.com/@officialevo_3/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@ArtistsVocalSphere" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+  </aside>
+  <!-- Overlay for side menu -->
+  <div id="overlay" class="overlay" tabindex="-1"></div>
 
   <script src="script.js"></script>
 </body>
